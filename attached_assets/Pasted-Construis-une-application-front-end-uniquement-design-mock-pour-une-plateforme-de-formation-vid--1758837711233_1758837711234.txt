@@ -1,0 +1,123 @@
+Construis une application front-end uniquement (design + mock) pour une plateforme de formation vidéo destinée à une coach.
+L’application doit permettre de présenter des modules de cours (Module 1, Module 2, Module 3…), chaque module contenant plusieurs vidéos.
+
+Stack & Design
+
+React + Vite + TypeScript
+
+Tailwind CSS (thème couleurs personnalisé)
+
+shadcn/ui (boutons, cards, tabs, accordéons, navigation)
+
+lucide-react (icônes minimalistes)
+
+framer-motion (animations fluides)
+
+react-router-dom (routing simple)
+
+Données mockées en local (pas d’upload ni back-end réel).
+
+Palette & Style
+
+Beige clair (#FDF6EC) en fond général.
+
+Or élégant (#D4AF37) pour accents (titres, boutons primaires, séparateurs).
+
+Marron profond (#4E342E) pour typographie et zones de contraste.
+
+Typo élégante : Inter ou Playfair Display (titres en serif, corps en sans-serif).
+
+UI minimaliste et premium : grands espaces, arrondis XL, ombres douces, hover subtils.
+
+Pages & Parcours
+1) Page d’accueil / Connexion (route /)
+
+Header avec logo de la coach + slogan.
+
+Hero en beige/or : phrase d’accroche “Bienvenue dans votre espace de formation”.
+
+Bouton “Se connecter” (mock, redirige /dashboard).
+
+2) Dashboard (route /dashboard)
+
+Sidebar gauche (marron/or) avec navigation : Accueil, Modules, Ressources, Profil.
+
+Section principale :
+
+Message de bienvenue avec prénom de l’élève (mock).
+
+Carte “Progression” (ex : Module 1 terminé à 70%).
+
+Bouton CTA “Continuer ma formation”.
+
+3) Modules (route /modules)
+
+Vue par cartes élégantes (or/beige) : Module 1, Module 2, Module 3…
+
+Chaque carte module : titre + brève description + progression.
+
+Clic sur un module → redirige /modules/:id.
+
+4) Détail d’un module (route /modules/:id)
+
+Titre du module en doré.
+
+Liste des vidéos (sous forme de cards ou liste stylisée) avec :
+
+Nom de la vidéo
+
+Durée (mock)
+
+Bouton “Regarder” (Dialog avec lecteur vidéo placeholder type <div class="bg-black h-64 flex items-center justify-center text-white">Vidéo</div>).
+
+Barre latérale droite : résumé du module, objectifs, notes.
+
+5) Ressources (route /resources)
+
+Liste téléchargeable (mock) de PDF / audio.
+
+Style cartes marron/beige avec icône (Doc, Audio, etc.).
+
+6) Profil (route /profile)
+
+Photo mock + infos utilisateur.
+
+Statistiques : modules terminés, progression globale.
+
+Bouton “Déconnexion” (mock → revient /).
+
+Données Mock Exemple
+
+Modules :
+
+Module 1 : “Les bases” → 3 vidéos (10min, 12min, 8min)
+
+Module 2 : “Approfondissement” → 4 vidéos
+
+Module 3 : “Pratique avancée” → 2 vidéos
+
+Ressources : 3 fichiers PDF mock.
+
+Utilisateur : { nom: “Marie Dupont”, progression: 45% }.
+
+Animations & UI
+
+Transitions fluides (framer-motion fade/slide).
+
+Hover subtils sur cartes (légère élévation + glow doré).
+
+Progress bars dorées dans modules.
+
+Empty states élégants (“Aucun module disponible pour l’instant”).
+
+Livrables attendus
+
+Application React avec Landing + Dashboard + Modules + Détail module + Ressources + Profil.
+
+Design premium beige/or/marron inspiré du luxe et du coaching haut de gamme.
+
+Mock data intégrée (modules/vidéos/ressources/utilisateur).
+
+Code propre, modulaire, composants réutilisables (ModuleCard, VideoCard, ProgressBar).
+
+README minimal expliquant stack et mock.
